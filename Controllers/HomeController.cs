@@ -12,7 +12,7 @@ namespace basics.Controllers
         {
             return View();
         }
-
+          
         public IActionResult Contact() 
         {
             return View();
