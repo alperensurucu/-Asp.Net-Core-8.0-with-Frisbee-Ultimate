@@ -12,7 +12,7 @@ namespace basics.Controllers
             kurs.Title = "AspNet Core kursu";
             kurs.Description = "Güzel bir kurs";
 
-            return View(kurs);
+            return View(kurs);// Buraya yazılan kurs objesi , View altındaki index içinde karşılanmalı bu yüzden içine gidip, @model kurs yazılır.
         }
         public IActionResult List()
         {
@@ -26,7 +26,7 @@ namespace basics.Controllers
 
             };
 
-            return View("CourseList", kurslar);
+            return View("CourseList", kurslar); // buradaki kursList  , View klasörü altında arayacağı dosya adı .eğer View () içi boş şekline ise bu şekilde o zaman metodun ismi olan List i arayacaktır.
         }
     }
 }
