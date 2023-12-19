@@ -16,7 +16,7 @@ namespace basics.Controllers
         }
         public IActionResult List()
         {
-            var kurslar = new  List<Course>()
+            var kurslar = new  List<Course>()  // Şu anki modelimiz bir list . 
             {
                 new Course(){ Id = 1, Title= "aspnet kursu", Description = "güzel bir kurs."},
                 new Course(){ Id = 2, Title= "php kursu", Description = "güzel bir kurs."},
