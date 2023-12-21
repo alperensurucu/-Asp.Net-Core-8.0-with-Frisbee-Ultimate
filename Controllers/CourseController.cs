@@ -18,10 +18,10 @@ namespace basics.Controllers
         {
             var kurslar = new  List<Course>()  // Şu anki modelimiz bir list . 
             {
-                new Course(){ Id = 1, Title= "aspnet kursu", Description = "güzel bir kurs."},
-                new Course(){ Id = 2, Title= "php kursu", Description = "güzel bir kurs."},
-                new Course(){ Id = 3, Title= "django kursu", Description = "güzel bir kurs."},
-                new Course(){ Id = 3, Title= "nodejs kursu", Description = "güzel bir kurs."}
+                new Course(){ Id = 1, Title= "Frizbee Ultimate", Description = "7 ye 7 oynanan bir spor", image = "1.jpg"},
+                new Course(){ Id = 2, Title= "Bazen düşersin", Description = "yakalayamadı", image = "2.jpg"},
+                new Course(){ Id = 3, Title= "Sonra kalkarsın", Description = "yakalamak için hazır", image = "3.jpg"},
+                new Course(){ Id = 3, Title= "Takım arkadaşlarını yüreklendirirsin", Description = "pek işe yaramadı", image = "4.jpg"}
 
 
             };
