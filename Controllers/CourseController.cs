@@ -9,8 +9,9 @@ namespace basics.Controllers
         {
             var kurs = new Course();
             kurs.Id = 1;
-            kurs.Title = "AspNet Core kursu";
-            kurs.Description = "Güzel bir kurs";
+            kurs.Title = "Frizbee Ultimate";
+            kurs.Description = "Çok kural içeren bir takım oyunudur";
+            kurs.image = "1.jpg";
 
             return View(kurs);// Buraya yazılan kurs objesi , View altındaki index içinde karşılanmalı bu yüzden içine gidip, @model kurs yazılır.
         }
