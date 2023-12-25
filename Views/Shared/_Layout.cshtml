@@ -9,7 +9,8 @@
 </head>
 <body>
     <header>
-        @await Html.PartialAsync("_Navbar") //
+        @await Html.PartialAsync("_Navbar") 
+        @RenderSection("Header")
     </header> 
     <div class="container mt-3">
         <main>
