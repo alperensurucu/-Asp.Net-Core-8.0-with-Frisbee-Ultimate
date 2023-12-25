@@ -1,4 +1,4 @@
-# Asp.net Core 8.0 ile Frizbee Ultimate
+# Asp.net Core 8.0 with Frizbee Ultimate
 # Graduate Team Sports Project
 
 This project is created to share my experience as a team player in the university's graduate team for three years. It is an ASP.NET Core MVC project designed to showcase my sports activities and maintain my habits.
