@@ -1,11 +1,12 @@
-﻿<nav class="navbar navbar-expand-sm navbar-dark bg-success">
+﻿<nav class="navbar navbar-expand-sm navbar-dark bg-primary">
     <div class="container">
-        <a class="navbar-brand" href="#">TeamApp</a>
+        <a class="navbar-brand" asp-controller="Home" asp-action="Index">TeamApp</a>
         <ul class="navbar-nav me-auto">
-            <a href="#" class="nav-link">Home</a>
+            <li class="nav-item">
+                <a asp-controller="Home" asp-action="Index" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Teams</a>
+                <a asp-controller="Course" asp-action="List" class="nav-link">Teams</a>
             </li>
         </ul>
     </div>
