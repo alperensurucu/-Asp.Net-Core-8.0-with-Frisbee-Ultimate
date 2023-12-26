@@ -1,6 +1,3 @@
-﻿@model List<Course>
+﻿@model Course
 
-@foreach (var kurs in Model)
-{
-    @await Html.PartialAsync("_Course", kurs)
-}
+@await Html.PartialAsync("_Course", @Model)

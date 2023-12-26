@@ -5,26 +5,16 @@ namespace basics.Controllers
 {
     public class CourseController : Controller
     {
-        public IActionResult Index()
+   
+        public IActionResult Details(int? id)
         {
-            var kurs = new Course();
-            kurs.Id = 1;
-            kurs.Title = "Frizbee Ultimate";
-            kurs.Description = "Çok kural içeren bir takım oyunudur";
-            kurs.image = "1.jpg";
+            if (id == null)
+            {
+                return Redirect("course/list");
+            }
 
-            return View(kurs);// Buraya yazılan kurs objesi , View altındaki index içinde karşılanmalı bu yüzden içine gidip, @model kurs yazılır.
-        }
-
-        public IActionResult Details()
-        {
-            var kurs = new Course();
-            kurs.Id = 1;
-            kurs.Title = "Frizbee Ultimate";
-            kurs.Description = "Çok kural içeren bir takım oyunudur";
-            kurs.image = "1.jpg";
-
-            return View(kurs);
+            var kurs = Repository.GetById(id);
+                return View(kurs);
         }
 
         public IActionResult List()
